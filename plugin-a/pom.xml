@@ -40,6 +40,8 @@
       explicitly specifying the latest version here because one we get from the parent POM
       tends to lag behind a bit
     -->
+    <!--reproduceble: <maven-hpi-plugin.version>1.90</maven-hpi-plugin.version>-->
+    <!--not reproduceble: <maven-hpi-plugin.version>1.91</maven-hpi-plugin.version>-->
     <maven-hpi-plugin.version>1.96</maven-hpi-plugin.version>
   </properties>
 </project>
