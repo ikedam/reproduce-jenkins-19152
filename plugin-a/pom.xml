@@ -35,6 +35,26 @@
     </pluginRepository>
   </pluginRepositories>
 
+  <!--
+    This is a workaround for Jenkins <= 1.487
+    maven-hpi-plugin.version works only for Jenkins >= 1.488
+  -->
+  <!--
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jenkins-ci.tools</groupId>
+        <artifactId>maven-hpi-plugin</artifactId>
+        <version>1.96</version>
+        <extensions>true</extensions>
+        <configuration>
+          <showDeprecation>true</showDeprecation>
+        </configuration>
+      </plugin>
+    </plugins>
+  </build>
+  -->
+
   <properties>
     <!--
       explicitly specifying the latest version here because one we get from the parent POM
